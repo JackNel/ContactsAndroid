@@ -49,8 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-        String contactToRemove = contacts.getItem(position);
-        contacts.remove(contactToRemove);
+        contacts.remove(contacts.getItem(position));
         return true;
     }
 }
